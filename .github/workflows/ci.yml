@@ -29,7 +29,7 @@ jobs:
       - name: Release
         if: github.ref == 'refs/heads/master'
         id: semantic
-        uses: cycjimmy/semantic-release-action@v2
+        uses: cycjimmy/semantic-release-action@v6
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: Update major version tag (e.g., v1)
